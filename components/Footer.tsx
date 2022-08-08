@@ -7,7 +7,7 @@ import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 
 
-import { useDarkMode } from 'lib/use-dark-mode'
+
 import * as config from 'lib/config'
 
 import styles from './styles.module.css'
@@ -31,10 +31,7 @@ export const FooterImpl: React.FC = () => {
       <div className={styles.settings}>
         {hasMounted && (
           <a
-            className={styles.toggleDarkMode}
-            href='#'
-            role='button'
-         
+                     
           >
  
           </a>
