@@ -5,8 +5,7 @@ import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+
 
 import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
@@ -17,15 +16,9 @@ import styles from './styles.module.css'
 
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
-  const { isDarkMode, toggleDarkMode } = useDarkMode()
+ 
 
-  const onToggleDarkMode = React.useCallback(
-    (e) => {
-      e.preventDefault()
-      toggleDarkMode()
-    },
-    [toggleDarkMode]
-  )
+
 
   React.useEffect(() => {
     setHasMounted(true)
@@ -41,8 +34,7 @@ export const FooterImpl: React.FC = () => {
             className={styles.toggleDarkMode}
             href='#'
             role='button'
-            onClick={onToggleDarkMode}
-            title='Toggle dark mode'
+         
           >
  
           </a>
