@@ -5,6 +5,5 @@ export function useDarkMode() {
 
   return {
     isDarkMode: true,
-    toggleDarkMode: function () {}
   }
 }
